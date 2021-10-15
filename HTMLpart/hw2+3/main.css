@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1:hover{
+    background-color: white;
+    color: red;
+}
+.logo{
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+.main {
+    text-align: center;
+}
+.h2_text{
+    color: red;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 10px;
+}
+li>a {
+    font-size: 1em;
+    color: red;
+    text-decoration: none;
+}
+li>a:hover{
+    color: white;
+ }
+
+
