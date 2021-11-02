@@ -200,6 +200,21 @@ table {
   padding: 0 12px;
 }
 
+.header__btn_mobile {
+  display: none;
+  width: 30px;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: center;
+}
+.header__btn_mobile div {
+  height: 3.3px;
+  background: #FF7400;
+  border-radius: 50px;
+}
+.mobile {
+  display: none;
+}
 
 
 
