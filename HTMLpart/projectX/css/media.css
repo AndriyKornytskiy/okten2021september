@@ -37,6 +37,15 @@
         display: none !important;
     }
 
+    #header-top-web {
+        display: none !important;
+    }
+
+    #header-top-media {
+        display: flex !important;
+        column-gap: unset;
+    }
+
     .row-cols-5 > .logo {
         width: 49%;
     }
@@ -62,24 +71,32 @@
         margin-bottom: 0;
     }
 
-    .work_time {
-        display: none !important;
+    .header-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
 
-    .location {
-        display: none !important;
+    .header-contacts .phone {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .phone h2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .phone a {
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .whatsapp {
-        display: none !important;
-    }
-
-    .phone {
-        display: none !important;
-    }
-
-    #media-box-header {
-        display: flex; /*ДОробити!!!!*/
+        width: 140px;
+        height: 18px;
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .logination {
@@ -318,12 +335,15 @@
     .button.cards_btn-left {
         width: 164px;
     }
+
     .cards_btn-mid {
         width: 82px;
     }
+
     .cards_btn-right {
         width: 180px;
     }
+
     .cards_btn {
         column-gap: 10px;
         width: 140%;
@@ -334,92 +354,115 @@
         font-size: 14px;
         line-height: 16px;
     }
+
     #cards_content-web {
         display: none;
     }
+
     #cards_content-media {
         display: flex;
         flex-direction: column;
     }
+
     .card-img-top {
         width: 149px;
         height: 127px;
     }
+
     .card-title {
         font-size: 13px;
         line-height: 19px;
     }
+
     .card-footer {
         column-gap: unset;
     }
+
     .horizont-line {
         margin: 25px 0 19px;
     }
+
     .cards_btn-next {
         margin-top: 25px;
     }
+
     .btn-next {
         width: 160px;
         height: 34px;
         font-size: 12px;
         line-height: 14px;
     }
+
     .news {
         margin-top: 50px;
     }
+
     .news-title {
         font-size: 16px;
         line-height: 19px;
     }
+
     .news-decor,
     .news-content_box__date::before,
     .news-content_box__date::after {
         display: none;
     }
+
     .news-content {
         display: block;
     }
+
     .news-content_box {
         width: 100%;
     }
-    .news-content_box__date{
+
+    .news-content_box__date {
         width: 65px;
         height: 18px;
         font-size: 10px;
         line-height: 12px;
         align-items: center;
     }
+
     .news-content_box__title {
         margin: 8px 0;
         font-size: 14px;
         line-height: 18px;
     }
+
     .news-content_box__descrip {
         font-size: 12px;
         line-height: 18px;
     }
+
     .footer {
         margin-top: 54px;
         height: unset;
     }
+
     .footer-content {
         display: block;
         padding-top: 0;
     }
+
     .row-cols-4 .footer-content_box {
         width: 100%;
     }
+
     .footer-content_box {
         padding-top: 25px;
     }
+
     .footer-content_box__title,
     .footer-content_box_btm p {
         font-size: 14px;
         line-height: 16px;
     }
+
     .active_list {
         row-gap: 10px;
     }
+
     .active_list a,
     .creditCards p,
     .footer-content_box_top p,
@@ -427,63 +470,77 @@
         font-size: 12px;
         line-height: 14px;
     }
+
     .creditCards {
         margin-top: 20px;
     }
+
     .creditCards img {
         width: 89px;
         height: 35px;
     }
+
     .footer-content_box_top {
         display: block;
     }
+
     .footer-content_box_top_right {
         width: 100%;
         margin-top: 25px;
     }
+
     .footer-content_box_btm {
         margin-top: 25px;
     }
+
     .communicate {
         flex-direction: column;
     }
+
     .footer-content_box_btm a {
         font-size: 13px;
         line-height: 15px;
     }
+
     .communicate p {
         margin-bottom: 5px;
     }
+
     .subscribe {
         margin-top: 25px;
     }
+
     .subscribe p {
         margin-bottom: 8px;
     }
+
     .subscribe .input-group {
         width: 100%;
     }
+
     #input-group-button-right_footer {
         width: 104px;
         font-weight: normal;
         font-size: 12px;
         line-height: 14px
     }
+
     .socium {
         justify-content: start;
         column-gap: 40px;
     }
+
     .corporate {
         margin-top: 0;
         padding: 15px;
     }
+
     .footer-decor_line_media {
         display: flex;
     }
+
     .corporate p {
         margin-bottom: unset;
     }
-
-
 }
 

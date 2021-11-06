@@ -19,7 +19,7 @@
 					<div>Ваш город: <a href="#" class="nav_text">Москва</a></div>
 					<div class="collapse show" id="navbarWithDropdown">
 						<ul class="navbar-nav">
-							<li class="nav-item dropdown media">
+							<li class="nav-item dropdown media"> <!--FOR MEDIA-->
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkWeb" role="button" data-bs-toggle="dropdown"
 								   aria-expanded="false">
 									Еще
@@ -69,7 +69,7 @@
 
 		<div class="header">
 			<div class="container d-flex flex-column">
-				<div class="header-container_top row-cols-5 d-flex align-items-center">
+				<div id="header-top-web" class="header-container_top web row-cols-5 d-flex align-items-center">
 					<div class="logo d-flex align-items-center">
 						<img src="image/Mask%20Group.png" alt="logo">
 						<div>
@@ -95,22 +95,31 @@
 						<h2>+7 383 291 92 86</h2>
 						<p><a href="#">форма обратной связи</a></p>
 					</div>
-					<!--FOR MEDIA-->
-					<div id="media-box-header">
+				</div>
+				<div id="header-top-media" class="header-container_top media row-cols-2 d-flex align-items-center"> <!--FOR MEDIA-->
+					<div class="logo d-flex align-items-center">
+						<img src="image/Mask%20Group.png" alt="logo">
+						<div>
+							<h1>AVT-ZAP</h1>
+							<p>Интернет-магазин запчастей для АКПП</p>
+						</div>
+					</div>
+					<div class="header-contacts">
+						<div class="phone d-flex flex-column align-items-end">
+							<h2>+7 383 291 92 86</h2>
+							<p><a href="#">форма обратной связи</a></p>
+						</div>
 						<div class="d-flex justify-content-center">
 							<div class="whatsapp d-flex justify-content-center align-items-center">
 								<img src="image/whatsapp.png" alt="whatsapp">Напишите нам в WhatsApp
 							</div>
 						</div>
-						<div class="phone d-flex flex-column align-items-end">
-							<h2>+7 383 291 92 86</h2>
-							<p><a href="#">форма обратной связи</a></p>
-						</div>
 					</div>
 				</div>
+
 				<div class="header-container_bottom row-cols-5 d-flex align-items-center">
 					<div class="catalogue">
-						<button id="media-bnt-header" class="d-flex justify-content-center align-items-center">
+						<button id="media-bnt-header" class="d-flex justify-content-center align-items-center"> <!--FOR MEDIA-->
 							<div class="icon-wrap d-flex flex-column">
 								<div></div>
 								<div></div>
@@ -132,7 +141,7 @@
 							       aria-describedby="input-group-button-right">
 							<button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Найти</button>
 						</div>
-						<div id="header-input-media" class="input-group">
+						<div id="header-input-media" class="input-group"> <!--FOR MEDIA-->
 							<input type="text" class="form-control" placeholder="Поиск по наименованию..."
 							       aria-describedby="input-group-button-right">
 							<button type="button" class="btn btn-outline-secondary" id="input-group-button-right_media"><img src="image/search.png" alt="search"></button>

@@ -743,12 +743,12 @@ button.cards_btn-left {
     color: #737E9B;
 }
 
-/* For media*/
+/* For media <320*/
 .nav-item.dropdown.media {
     display: none;
 }
-#media-box-header {
-    display: none;
+.header-container_top.media {
+    display: none !important;
 }
 #media-bnt-header {
     display: none !important;
