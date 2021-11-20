@@ -232,3 +232,68 @@ function reverseArray(array) {
 }
 let reversed = reverseArray(arrForRevers);
 console.log(reversed);
+
+//-------------------------------------------------------additional----------------------------------------------
+// - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
+function oneOrMore() {
+    if (arguments.length === 1) {
+        console.log(arguments[0]);
+    } else if (arguments.length > 1) {
+        let acc = arguments[0];
+        for (let i = 1; i < arguments.length; i++) {
+            acc += arguments[i];
+        }
+        console.log(acc);
+    }
+}
+oneOrMore(1, 5, 'work');
+
+// - створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+//     EXAMPLE:
+// [1,2,3,4]
+//     [2,3,4,5]
+// результат
+//     [3,5,7,9]
+let arr1 = [1,2,3,4];
+let arr2 = [2,3,4,5];
+
+function arrayConcat(array_one, array_two) {
+    let concat = [];
+    for (let i = 0; i < array_one.length; i++) {
+        concat[i] = array_one[i] + array_two[i];
+    }
+    return concat;
+}
+let resolt = arrayConcat(arr1, arr2);
+console.log(resolt);
+
+// - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+// EXAMPLE:
+let user = [{name: 'Dima', age: 13}, {model: 'Camry'}];  /*===> [ name, age, model ]*/
+
+function findKeys(array) {
+    let keysArr = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let arrayKey in array[i]) {
+            keysArr.push(arrayKey);
+        }
+    }
+    return keysArr;
+}
+let findKeys1 = findKeys(user);
+console.log(findKeys1);
+
+//     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+// EXAMPLE:
+//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+function findValues(array) {
+    let keysArr = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let arrayKey in array[i]) {
+            keysArr.push(array[i][arrayKey]);
+        }
+    }
+    return keysArr;
+}
+let findValues1 = findValues(user);
+console.log(findValues1);
