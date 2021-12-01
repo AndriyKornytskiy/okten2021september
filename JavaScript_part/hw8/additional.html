@@ -47,22 +47,27 @@
 		<script>
             // Your awesome code here.....
             // написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
-            let classes = [];
-            function classCollector (startElement) {
-                if (startElement.children.length) {
-                    for (let element of startElement.children) {
-                        classCollector(element);
-                        if (element.classList.length) {
-                            for (let classElement of element.classList) {
-		                        classes.push(classElement);
+            function collector () {
+                let classes = [];
+
+                 return function classCollector(startElement) {
+                    if (startElement.children.length) {
+                        for (let element of startElement.children) {
+                            classCollector(element);
+                            if (element.classList.length) {
+                                for (let classElement of element.classList) {
+                                    classes.push(classElement);
+                                }
                             }
                         }
+                        return classes;
                     }
                 }
             }
 
-            classCollector(document.body);
-            console.log(classes);
+            let collector1 = collector();
+            console.log(collector1(document.body));
+
 
 		</script>
 	</body>
