@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.selected-user{
+    margin: 10px;
+    background-color: lightgoldenrodyellow;
+}
+.selected-user > div{
+    padding: 2px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.company{
+    border: none;
+}
+button{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.posts-wrap{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+.post-div{
+    width: 19%;
+    border-left: 10px solid palegoldenrod;
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+a{
+    display: block;
+    text-decoration: none;
+    align-self: end;
+}
+

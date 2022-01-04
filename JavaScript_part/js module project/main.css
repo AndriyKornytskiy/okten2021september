@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin-top: 5px;
+}
+h2{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 10px;
+}
+.users-wrap{
+    margin: 10px 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.single-user{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 49%;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
